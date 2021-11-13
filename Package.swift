@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "dog-server",
+    name: "swift-dog-server",
     platforms: [
        .macOS(.v10_15)
     ],
