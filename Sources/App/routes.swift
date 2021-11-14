@@ -33,10 +33,10 @@ func setup() {
 
 func routes(_ app: Application) throws {
     setup()
+    
+    // Could refactor to use a controller.
 
-    app.get { _ in
-        "It works!"
-    }
+    app.get { _ in "Hello, World!" }
 
     // The Content-Type header will automatically be set to "application/json".
     app.get("dog") { _ -> [Dog] in
